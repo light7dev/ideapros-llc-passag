@@ -1,0 +1,39 @@
+version: "3.9"
+
+services:
+  web:
+    build:
+      context: .
+      args:
+        SECRET_KEY: wLpn0302nst0Nu8x7QrXaNA38lEV6EotivNDBmdwgNggGoxTGYCtW0ZjLRXckwGMEUI
+    env_file: .env
+    volumes:
+      - ./:/opt/webapp
+    ports:
+      - "8000:${PORT}"
+  postgres:
+    environment:
+      POSTGRES_PASSWORD: password
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+  redis:
+    ports:
+      - "6379:6379"
+
+  celery:
+    build:
+      context: .
+    env_file: .env
+    user: django
+    command: celery -A ideapros_llc_passag_30831 worker --beat --scheduler django -l info --concurrency 2
+    depends_on:
+      - web
+      - postgres
+      - redis
+
+
+volumes: 
+  postgres-data:
+

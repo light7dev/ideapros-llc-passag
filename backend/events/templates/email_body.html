@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <br>
+
+        <h3>Hi, {{ dedicate_to_name }}</h3>
+        <p>{{ event_text }}</p>
+        {% for link1 in video_links %}
+            <ul>
+                <li><a href="{{ link1 }}">Video Link</a></li>
+            </ul>
+        {% endfor %}
+        {% for link2 in image_links %}
+            <ul>
+                <li><a href="{{ link2 }}">Image Link</a></li>
+            </ul>
+        {% endfor %}
+        <h3>Regards</h3>
+        <h3>{{ sender_name }}</h3>
+
+    </body>
+</html>

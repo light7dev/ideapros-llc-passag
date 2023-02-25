@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "879764691153",
+    "project_id": "passages-339911",
+    "storage_bucket": "passages-339911.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:879764691153:android:a3f0cf038ad8deabdb8df0",
+        "android_client_info": {
+          "package_name": "com.ideapros_llc_passag_30831"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "879764691153-9ckm02unvug41eobo5vmh4r2njuguce9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0D_dYkiP3fbbiX9t_roNZ7sjUy1FszB4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "879764691153-9ckm02unvug41eobo5vmh4r2njuguce9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

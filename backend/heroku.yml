@@ -1,0 +1,15 @@
+build:
+  docker:
+    web: Dockerfile
+  config:
+    DEBUG_COLLECTSTATIC: 1
+    SECRET_KEY: build
+release:
+  image: web
+  command:
+    - python3 manage.py migrate
+run:
+  worker:
+    command:
+      - celery -A ideapros_llc_passag_30831 worker --beat --scheduler django --concurrency 2
+    image: web
