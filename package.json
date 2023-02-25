@@ -46,7 +46,7 @@
     "react-native-flash-message": "^0.2.1",
     "react-native-fs": "^2.19.0",
     "react-native-gesture-handler": "^1.10.3",
-    "react-native-image-crop-picker": "^0.38.0",
+    "react-native-image-crop-picker": "^0.39.0",
     "react-native-image-picker": "4.4.0",
     "react-native-kochava-tracker": "^2.0.0",
     "react-native-modal": "^13.0.0",
